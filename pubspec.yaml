@@ -76,11 +76,14 @@ flutter:
     - family: font
       fonts:
         - asset: assets/fonts/Aclonica-Regular.ttf
-  #   - family: Trajan Pro
-  #     fonts:
-  #       - asset: fonts/TrajanPro.ttf
-  #       - asset: fonts/TrajanPro_Bold.ttf
-  #         weight: 700
+
+    - family: mon
+      fonts:
+        - asset: assets/fonts/Montserrat-VariableFont_wght.ttf
+
+    - family: robo
+      fonts:
+        - asset: assets/fonts/Roboto-Black.ttf
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
