@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:practice_project_2/screens/Login.dart';
+import 'package:practice_project_2/screens/menu.dart';
 import 'package:practice_project_2/screens/otp.dart';
 import 'package:practice_project_2/screens/signup.dart';
 
@@ -18,6 +19,7 @@ class MyApp extends StatelessWidget {
       routes: {
         "Otp": (context) => Otp(),
         "Signup": (context) => Signup(),
+        "menu": (context) => menu(),
       },
     );
   }

@@ -287,7 +287,10 @@ class _OtpState extends State<Otp> {
             SizedBox(
               height: 20,
             ),
-            CircularProgressIndicator(
+            // CircularProgressIndicator(
+            //   color: Colors.orange,
+            // ),
+            RefreshProgressIndicator(
               color: Colors.orange,
             ),
             Text(
