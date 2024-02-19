@@ -5,7 +5,7 @@ import 'package:practice_project_2/screens/otp.dart';
 import 'package:practice_project_2/screens/signup.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp( MyApp());
 }
 
 class MyApp extends StatelessWidget {

@@ -150,6 +150,8 @@ class _OtpState extends State<Otp> {
                     onChanged: (value) {
                       if (value.length == 1) {
                         FocusScope.of(context).nextFocus();
+                      } else {
+                        FocusScope.of(context).previousFocus();
                       }
                     },
                     style: Theme.of(context).textTheme.headlineSmall,
@@ -174,6 +176,8 @@ class _OtpState extends State<Otp> {
                     onChanged: (value) {
                       if (value.length == 1) {
                         FocusScope.of(context).nextFocus();
+                      } else {
+                        FocusScope.of(context).previousFocus();
                       }
                     },
                     style: Theme.of(context).textTheme.titleLarge,
@@ -201,6 +205,8 @@ class _OtpState extends State<Otp> {
                     onChanged: (value) {
                       if (value.length == 1) {
                         FocusScope.of(context).nextFocus();
+                      } else {
+                        FocusScope.of(context).previousFocus();
                       }
                     },
                     style: Theme.of(context).textTheme.titleLarge,
@@ -225,6 +231,8 @@ class _OtpState extends State<Otp> {
                     onChanged: (value) {
                       if (value.length == 1) {
                         FocusScope.of(context).nextFocus();
+                      } else {
+                        FocusScope.of(context).previousFocus();
                       }
                     },
                     style: Theme.of(context).textTheme.titleLarge,
@@ -249,6 +257,8 @@ class _OtpState extends State<Otp> {
                     onChanged: (value) {
                       if (value.length == 1) {
                         FocusScope.of(context).nextFocus();
+                      } else {
+                        FocusScope.of(context).previousFocus();
                       }
                     },
                     style: Theme.of(context).textTheme.titleLarge,
@@ -271,6 +281,8 @@ class _OtpState extends State<Otp> {
                     onChanged: (value) {
                       if (value.length == 1) {
                         FocusScope.of(context).nextFocus();
+                      } else {
+                        FocusScope.of(context).previousFocus();
                       }
                     },
                     style: Theme.of(context).textTheme.titleLarge,
@@ -287,12 +299,12 @@ class _OtpState extends State<Otp> {
             SizedBox(
               height: 20,
             ),
-            // CircularProgressIndicator(
-            //   color: Colors.orange,
-            // ),
-            RefreshProgressIndicator(
+            CircularProgressIndicator(
               color: Colors.orange,
             ),
+            // RefreshProgressIndicator(
+            //   color: Colors.orange,
+            // ),
             Text(
               'Please Wait',
               style: TextStyle(
