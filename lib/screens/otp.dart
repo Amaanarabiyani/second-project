@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:practice_project_2/components/colors.dart';
 
 class Otp extends StatefulWidget {
   const Otp({super.key});
@@ -140,7 +141,6 @@ class _OtpState extends State<Otp> {
                   height: 60,
                   width: 60,
                   child: TextField(
-                    controller: firstInput,
                     textDirection: TextDirection.rtl,
                     decoration: InputDecoration(
                       border: OutlineInputBorder(
@@ -311,7 +311,7 @@ class _OtpState extends State<Otp> {
                 color: Color(0xff6B6B6B),
                 fontFamily: 'robo',
                 fontWeight: FontWeight.w400,
-                fontSize: 13,
+                fontSize: 16,
               ),
             ),
             SizedBox(
@@ -322,7 +322,7 @@ class _OtpState extends State<Otp> {
               height: 60,
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(10),
-                color: Color(0xffFDBD58),
+                color: colors.brown,
               ),
               child: TextButton(
                 onPressed: () {
@@ -333,7 +333,7 @@ class _OtpState extends State<Otp> {
                   style: TextStyle(
                     fontWeight: FontWeight.w500,
                     fontSize: 16,
-                    color: Color(0xff292d32),
+                    color: colors.white,
                     fontFamily: 'robo',
                   ),
                 ),

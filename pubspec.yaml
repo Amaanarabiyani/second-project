@@ -34,6 +34,7 @@ dependencies:
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
+  ticket_widget: ^1.0.2
 
 dev_dependencies:
   flutter_test:
@@ -84,6 +85,10 @@ flutter:
     - family: robo
       fonts:
         - asset: assets/fonts/Roboto-Black.ttf
+
+    - family: iti
+      fonts:
+        - asset: assets/fonts/Montserrat-Italic-VariableFont_wght.ttf
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages

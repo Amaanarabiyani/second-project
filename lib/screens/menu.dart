@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:practice_project_2/utils/My_navbar.dart';
 
 import 'package:practice_project_2/widgets/MyDrawer.dart';
 
@@ -12,8 +11,8 @@ class _menuState extends State<menu> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      bottomNavigationBar: MyNavBar(),
       appBar: AppBar(
+        centerTitle: true,
         actions: [
           Icon(Icons.notification_add),
           Padding(

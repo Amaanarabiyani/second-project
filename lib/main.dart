@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:practice_project_2/screens/Login.dart';
 import 'package:practice_project_2/screens/menu.dart';
+import 'package:practice_project_2/widgets/navigation.dart';
 import 'package:practice_project_2/screens/otp.dart';
 import 'package:practice_project_2/screens/signup.dart';
 
 void main() {
-  runApp( MyApp());
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -20,6 +21,7 @@ class MyApp extends StatelessWidget {
         "Otp": (context) => Otp(),
         "Signup": (context) => Signup(),
         "menu": (context) => menu(),
+        "NavBar": (context) => NavBar(),
       },
     );
   }

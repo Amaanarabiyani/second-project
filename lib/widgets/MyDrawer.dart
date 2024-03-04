@@ -3,6 +3,9 @@ import 'package:flutter/material.dart';
 class MyDrawer extends StatelessWidget {
   const MyDrawer({super.key});
 
+  final name = 'Brooklyn Simmons';
+  final email = 'BrooklynSimmons@gmail.com';
+
   @override
   Widget build(BuildContext context) {
     return Drawer(
@@ -11,7 +14,7 @@ class MyDrawer extends StatelessWidget {
         children: [
           UserAccountsDrawerHeader(
             accountName: Text(
-              'Brooklyn Simmons',
+              name,
               style: TextStyle(
                 fontWeight: FontWeight.w700,
                 fontFamily: 'robo',
@@ -20,7 +23,7 @@ class MyDrawer extends StatelessWidget {
               ),
             ),
             accountEmail: Text(
-              'BrooklynSimmons@gmail.com',
+              email,
               style: TextStyle(
                 fontWeight: FontWeight.w400,
                 fontFamily: 'robo',
@@ -191,9 +194,7 @@ class MyDrawer extends StatelessWidget {
           ),
           ListTile(
             leading: IconButton(
-              onPressed: () {
-                
-              },
+              onPressed: () {},
               icon: Image.asset(
                 'assets/images/profile.png',
               ),

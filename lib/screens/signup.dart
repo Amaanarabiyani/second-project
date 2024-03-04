@@ -138,7 +138,7 @@ class Signup extends StatelessWidget {
               ),
               child: TextButton(
                 onPressed: () {
-                  Navigator.pushNamed(context, 'menu');
+                  Navigator.pushNamed(context, 'NavBar');
                 },
                 child: Text(
                   'Create Account',
