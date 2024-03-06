@@ -1,3 +1,4 @@
+import 'package:another_carousel_pro/another_carousel_pro.dart';
 import 'package:flutter/material.dart';
 
 import 'package:practice_project_2/widgets/MyDrawer.dart';
@@ -32,19 +33,31 @@ class _menuState extends State<menu> {
       body: SingleChildScrollView(
         child: Column(
           children: [
-            Row(
-              children: [
-                Expanded(
-                  child: Image(
-                    image: AssetImage('assets/images/mar.png'),
+            SizedBox(
+              height: 200,
+              width: double.infinity,
+              child: AnotherCarousel(
+                images: [
+                  NetworkImage(
+                    'https://tse1.mm.bing.net/th?id=OIP.cMem9iR69kY7cGrNUMUkmQHaE8&pid=Api&P=0&h=180',
                   ),
-                )
-              ],
-            ),
-            Padding(
-              padding: const EdgeInsets.only(top: 10),
-              child: Image(
-                image: AssetImage('assets/images/thr.png'),
+                  NetworkImage(
+                    'https://tse4.mm.bing.net/th?id=OIP.96f6s_KoBRkDSqCjU0QsgAHaLH&pid=Api&P=0&h=180',
+                  ),
+                  AssetImage(
+                    'assets/images/mar.png',
+                  )
+                ],
+                dotBgColor: Colors.transparent,
+                dotSize: 6,
+                dotColor: Colors.orange,
+                dotPosition: DotPosition.bottomCenter,
+                indicatorBgPadding: 5.0,
+                autoplay: true,
+                animationCurve: Curves.fastOutSlowIn,
+                animationDuration: Duration(
+                  milliseconds: 1000,
+                ),
               ),
             ),
             SizedBox(
@@ -196,7 +209,7 @@ class _menuState extends State<menu> {
             ),
             Image(
               image: AssetImage('assets/images/off.png'),
-            ),
+            )
           ],
         ),
       ),

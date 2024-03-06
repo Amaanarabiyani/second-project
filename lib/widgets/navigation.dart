@@ -34,29 +34,28 @@ class _NavBarState extends State<NavBar> {
         type: BottomNavigationBarType.shifting,
         items: [
           BottomNavigationBarItem(
-            activeIcon: Icon(Icons.home_outlined),
-            icon: Icon(Icons.home),
+            icon: Image.asset('assets/images/home.png'),
             label: 'Home',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.shopping_bag),
+            icon: Image.asset('assets/images/shop.png'),
             label: 'Shopping',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.book_online),
+            icon: Image.asset('assets/images/shopping-bag.png'),
             label: 'Booking',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.more),
+            icon: Image.asset('assets/images/layer.png'),
             label: 'More',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.card_travel),
+            icon: Icon(Icons.card_travel_outlined),
             label: 'Cart',
           ),
         ],
         selectedItemColor: Colors.yellow,
-        unselectedItemColor: Colors.black,
+        unselectedItemColor: Colors.yellow,
         showUnselectedLabels: true,
         currentIndex: _selectedindex,
         onTap: (int index) {

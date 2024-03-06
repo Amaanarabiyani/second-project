@@ -7,6 +7,7 @@ class MyMore extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        centerTitle: true,
         title: Text(
           'More',
           style: TextStyle(
@@ -74,7 +75,59 @@ class MyMore extends StatelessWidget {
                 fontSize: 16,
               ),
             ),
-          )
+          ),
+          ListTile(
+            onTap: () {},
+            leading: Icon(Icons.save_alt),
+            trailing: Icon(Icons.arrow_right_alt),
+            title: Text(
+              'Saved costume',
+              style: TextStyle(
+                fontFamily: 'robo',
+                fontWeight: FontWeight.w500,
+                fontSize: 16,
+              ),
+            ),
+          ),
+          ListTile(
+            onTap: () {},
+            leading: Icon(Icons.save_alt),
+            trailing: Icon(Icons.arrow_right_alt),
+            title: Text(
+              'Saved costume',
+              style: TextStyle(
+                fontFamily: 'robo',
+                fontWeight: FontWeight.w500,
+                fontSize: 16,
+              ),
+            ),
+          ),
+          ListTile(
+            onTap: () {},
+            leading: Icon(Icons.save_alt),
+            trailing: Icon(Icons.arrow_right_alt),
+            title: Text(
+              'Saved costume',
+              style: TextStyle(
+                fontFamily: 'robo',
+                fontWeight: FontWeight.w500,
+                fontSize: 16,
+              ),
+            ),
+          ),
+          ListTile(
+            onTap: () {},
+            leading: Icon(Icons.save_alt),
+            trailing: Icon(Icons.arrow_right_alt),
+            title: Text(
+              'Saved costume',
+              style: TextStyle(
+                fontFamily: 'robo',
+                fontWeight: FontWeight.w500,
+                fontSize: 16,
+              ),
+            ),
+          ),
         ],
       ),
     );

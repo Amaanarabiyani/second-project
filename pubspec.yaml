@@ -35,6 +35,7 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
   ticket_widget: ^1.0.2
+  another_carousel_pro: ^1.0.0
 
 dev_dependencies:
   flutter_test:
