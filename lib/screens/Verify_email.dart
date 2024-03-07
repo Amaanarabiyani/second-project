@@ -1,8 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-class Verifynumber extends StatelessWidget {
-  const Verifynumber({super.key});
+class Verifyemail extends StatelessWidget {
+  const Verifyemail({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -25,7 +25,7 @@ class Verifynumber extends StatelessWidget {
               child: Row(
                 children: [
                   Text(
-                    'Verify Alternate Mobile\nNumber !',
+                    'Verify Email !',
                     style: TextStyle(
                         fontSize: 26,
                         fontWeight: FontWeight.w700,
@@ -39,7 +39,7 @@ class Verifynumber extends StatelessWidget {
               child: Row(
                 children: [
                   Text(
-                    'Verify below Mobile number then you go farther\nprocess',
+                    'Verify below email id then you go farther process',
                     style: TextStyle(
                         letterSpacing: 0,
                         fontSize: 15,
@@ -54,8 +54,8 @@ class Verifynumber extends StatelessWidget {
               child: TextFormField(
                 decoration: InputDecoration(
                   suffixIcon: Icon(CupertinoIcons.phone_arrow_up_right),
-                  hintText: 'Enter Mobile Number',
-                  labelText: 'Mobile Number',
+                  hintText: 'vscode@gmail.com',
+                  labelText: 'Enater Email Id',
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(10),
                   ),
@@ -74,10 +74,10 @@ class Verifynumber extends StatelessWidget {
                 ),
               ),
             ),
-            SizedBox(height: 300),
+            SizedBox(height: 360),
             TextButton(
               onPressed: () {
-                Navigator.pushNamed(context, 'Verifyemail');
+                Navigator.pushNamed(context, 'Paymentsucess');
               },
               child: Container(
                 width: 357,
@@ -88,7 +88,7 @@ class Verifynumber extends StatelessWidget {
                 ),
                 child: Center(
                   child: Text(
-                    'Verify Mobile Otp & Next',
+                    'Verify Email OTP & Next',
                     style: TextStyle(
                       color: Colors.white,
                       fontWeight: FontWeight.w500,

@@ -319,10 +319,9 @@ class BookingSummary extends StatelessWidget {
                   Text(
                     'My Addon Details',
                     style: TextStyle(
-                      fontWeight: FontWeight.w600,
-                      fontSize: 25,
-                      fontFamily: 'robo',
-                    ),
+                        fontWeight: FontWeight.w600,
+                        fontSize: 25,
+                        fontFamily: 'robo'),
                   )
                 ],
               ),

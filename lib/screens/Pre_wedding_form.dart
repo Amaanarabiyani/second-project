@@ -255,7 +255,9 @@ class Weddingform extends StatelessWidget {
               height: 40,
             ),
             TextButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.pushNamed(context, 'Bookingspay');
+              },
               child: Container(
                 width: 357,
                 height: 60,

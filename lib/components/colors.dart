@@ -6,12 +6,3 @@ class colors {
   static Color white = Colors.white;
   static Color black = Colors.black;
 }
-
-class Textstyle {
-  final TextStyle titleLarge = TextStyle(
-    fontSize: 16,
-    fontWeight: FontWeight.w600,
-    fontFamily: 'robo',
-    color: Colors.black,
-  );
-}

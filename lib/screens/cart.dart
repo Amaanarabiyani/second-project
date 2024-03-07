@@ -184,7 +184,31 @@ class MyCart extends StatelessWidget {
                   ),
                 ),
               ),
-            )
+            ),
+            TextButton(
+              onPressed: () {
+                Navigator.pushNamed(context, 'Productview');
+              },
+              child: Container(
+                width: 357,
+                height: 60,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(10),
+                  color: Colors.orange,
+                ),
+                child: Center(
+                  child: Text(
+                    'View Products',
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontWeight: FontWeight.w500,
+                      fontSize: 18,
+                      fontFamily: 'robo',
+                    ),
+                  ),
+                ),
+              ),
+            ),
           ],
         ),
       ),
